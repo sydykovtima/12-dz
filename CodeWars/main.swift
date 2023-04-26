@@ -87,6 +87,45 @@ var IntOtional =  Int(string)
 if Int(string) != nil {
     let a = string
 }
+/var numb = "2 "
+var num1 = "3  "
+var numb2 = "4 "
+var numb3 = "5  "
+for numberr in 1...100 {
+   if numberr % 2 == 0 {
+       numb += "\(numberr) , "
+       print(numb)
+   }
+   if numberr % 3 == 0 {
+       num1 += "\(numberr) , "
+       print(num1)
+   }
+   if numberr % 4 == 0 {
+       numb2 += "\(numberr) , "
+       print(numb2)
+   }
+   if numberr % 5 == 0 {
+     numb3 += "\(numberr) , "
+       print(numb3)
+   }
+}
+var name = "dfdsf sdfsfd sdfdf ,sdfsdf ,dsffrw"
+var word = ""
+var words = ""
+var probel = ""
+var non = ""
+func dict() {
+   for namee in name{
+       if namee != ","  && name != "." {
+           word += "\(namee)"
+       } else {
+           words += word
+           words += (" \(word.count)")
+       }
+   }
+}
+dict()
+print(words)
 var response: (statusCode:Int, message: String?, errorMessege: String?)
 var human: (name: String?, sureName:String?, age: Int?)
 human.name = "tima"
@@ -155,7 +194,18 @@ for i in array {
 for i in 0..<array.count{
     print("\(array[i])")
 }
+/var contact = ["Тима - 0776580207", "Дося - 0777834413", "Брат - 0222889077", " Окс - 0552001107", "Папа - 0778574659", " Кар - 0552611155", "Рауль - 0703546199", " - Арсен 0502041204", "Нурик - 0700632230", "Адина - 0707573749", "Нурай - 0700781078", "Бека - 0500367700", "Мама - 0772806060", "Аза - 0555683146", "Жаза - 0505672343", "Эля - 0990039959", "Точное время - *260#", "Баланс - *500#", "Исламка - 0703930778", "Богдан - 0772553323, "]
 
+var contactSorted = contact.sorted()
+while contact == ["Тима"] {
+    contact += ["\([contact.count])"]
+    if contact == ["Богдан"]{
+        break
+    }
+    if contact == ["tima"] {
+        print("tima - T")
+    }
+}
 let monthArray =  ["Jan", "Feb","March"," April","May","June","July","August", "Sep", "Oct", "Nov", "Dec"]
 var monthIndex = 0
 for i in array {
